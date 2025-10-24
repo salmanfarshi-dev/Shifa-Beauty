@@ -1,33 +1,36 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Form</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="image/logo.jpg" type="image/x-icon">
 
+    <title>Shifa Beauty</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="signup-box">
-   <h1>Sign Up</h1>
-   <h4>It's free and only takes a minute</h4>
-   <form>
-       <lable>First Name</lable>
-       <input type="text" placeholder="Enter your first name">
-       <lable>last Name</lable>
-       <input type="text" placeholder="Enter your last name">
-       <lable>Email</lable>
-       <input type="email" placeholder="Enter your email">
-       <lable>Password</lable>
-       <input type="password" placeholder="Enter the Password">
-       <lable>Confirm Password</lable>
-       <input type="confirm password" placeholder="Enter the Confirm Password"> <br><br>
+        <h1>Sign Up</h1>
+        <h4>It's free and only takes a minute</h4>
+        <form action="insert.php" method="POST">
+            <label>First Name</label>
+            <input type="text" class="form-control" id="firstName" name="firstName" required placeholder="Enter your first name">
+
+            <label>Last Name</label>
+            <input type="text" class="form-control" id="lastName" name="lastName" required placeholder="Enter your last name">
+
+            <label>Email</label>
+            <input type="email" class="form-control" id="email" name="email" required placeholder="Enter your email">
+
+            <label>Number</label>
+            <input type="number" class="form-control" id="number" name="number" required placeholder="Enter your number">
+
+            <label>Password</label>
+            <input type="password" class="form-control" id="password" name="password" required placeholder="Enter the Password"> <br><br>
+
+            <button type="submit" name="sub">Register</button>
+        </form>
        
-       <button type="submit">Register</button>
-   </form>
-   <p>By clicking the Register button <br> You agree to our website<br>
-</p>
-</div>
+    </div>
 </body>
 </html>

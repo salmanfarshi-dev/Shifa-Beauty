@@ -482,7 +482,7 @@ body{
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
     gap: 30px;
 }
 
@@ -575,7 +575,8 @@ body{
 
 .blog-image {
     width: 100%;
-    height: auto;
+    height: 300px;
+    object-fit: cover;
     border-bottom: 3px solid #ff6f61;
 }
 
@@ -834,7 +835,7 @@ input:focus, textarea:focus {
 }
 .signup-box{
     width: 360px;
-    height: 520px;
+    height: 570px;
     margin:auto;
     background-color: rgb(156, 4, 144);
     border-radius: 3px;
@@ -882,4 +883,64 @@ p{
 }
 button:hover {
     background-color:#0dcee7;
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 900px) {
+    .hero-title { font-size: 36px; }
+    .hero-subtitle { font-size: 18px; }
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        padding: 100px 10px;
+    }
+
+    .hero-title {
+        font-size: 28px;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+    }
+
+    .highlights-grid,
+    .products-grid,
+    .testimonials-grid,
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .highlight-item,
+    .product-item,
+    .testimonial-item {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .signup-box {
+        width: 95%;
+    }
 }
