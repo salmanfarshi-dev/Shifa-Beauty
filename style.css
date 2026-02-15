@@ -55,7 +55,17 @@ header .navbar {
     align-items: center;
     gap: 15px;
 }
-
+.header-right a,
+.hero-content a{
+    background-color: #ff6f61;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: 0.4s;
+}
+.header-right a:hover,
+.hero-content a:hover{
+    background-color: #fc402f;
+}
 
 /* Hero Section Styles */
 .hero {
