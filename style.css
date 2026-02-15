@@ -14,7 +14,7 @@ a {
 /* Header Styles */
 .header {
     background-color: #4d4444;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 header .navbar {
@@ -248,7 +248,7 @@ header .navbar {
     padding: 30px;
     max-width: 300px;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease; box-shadow 0.3s ease;
 }
 
 .testimonial-item:hover {
@@ -958,4 +958,20 @@ button:hover {
     .signup-box {
         width: 95%;
     }
+}
+
+
+
+
+
+@media (min-width:320px) and (max-width:575.99px){
+    .testimonial-item {
+    background-color: #292929;
+    border-radius: 8px;
+    padding: 30px;
+    width: 300px;
+}
+.highlight-item {
+    width: 300px;
+}
 }
