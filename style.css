@@ -55,6 +55,12 @@ header .navbar {
     align-items: center;
     gap: 15px;
 }
+.nav ul li a:hover,
+.nav ul li a.active {
+    background-color: #ff6f61;
+    border-radius: 4px;
+}
+
 .header-right a,
 .hero-content a{
     background-color: #ff6f61;
